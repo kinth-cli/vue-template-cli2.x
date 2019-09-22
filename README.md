@@ -60,4 +60,5 @@ npm run build --report
 - api模块化管理
 - store模块化管理
 - views中的vue文件分模块
+- eslint暂时使用默认规则
 
