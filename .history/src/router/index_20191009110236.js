@@ -9,7 +9,7 @@ const UserDetail = resolve => require.ensure([], () => resolve(require('@/views/
 const role = 'ADMIN' // 用户角色根据登录情况获取
 
 Vue.use(Router)
-
+debugger
 const router = new Router({
   routes: [
     {
@@ -27,7 +27,7 @@ const router = new Router({
     {
       path: '/userDetail',
       name: 'userDetail',
-      meta: {permission: ''},
+      meta: {permission: 'ADMIN'},
       component: UserDetail
     }
   ]

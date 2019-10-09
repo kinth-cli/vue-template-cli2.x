@@ -27,7 +27,7 @@ const router = new Router({
     {
       path: '/userDetail',
       name: 'userDetail',
-      meta: {permission: ''},
+      meta: {permission: 'ADMIN'},
       component: UserDetail
     }
   ]

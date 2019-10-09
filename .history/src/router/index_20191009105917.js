@@ -27,13 +27,14 @@ const router = new Router({
     {
       path: '/userDetail',
       name: 'userDetail',
-      meta: {permission: ''},
+      meta: {permission: 'ADMIN'},
       component: UserDetail
     }
   ]
 })
 
 router.beforeEach((to, from, next) => {
+  debugger
   if (from.path !== '/' || from.path !== '/error') {
     if (to.meta.permission.match(role)) { // 判断角色是否有权限访问页面，根据项目情况判断是否需要
       next()
