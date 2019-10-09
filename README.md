@@ -36,7 +36,7 @@ npm run build --report
 |   |   ├── css
 |   |   |── images
 |   |   └── js
-|   ├── components
+|   ├── components    // 存放组件
 |   ├── router
 |   |   └── index.js  // 路由，用路由全局前置守卫router.beforeEach做角色控制
 |   ├── store                  // store模块化管理
